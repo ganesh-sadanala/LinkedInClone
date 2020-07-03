@@ -1,4 +1,4 @@
-const linkedinData = [
+export const linkedInPosts = [
   {
     id: 1,
     user: "Tezi khan",

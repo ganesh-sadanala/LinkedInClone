@@ -38,15 +38,16 @@ svg:hover {
   font-weight: 400;
   font-size: 14px;
 }
-.Posts {
+#Posts {
   display: grid;
   grid-template-columns: 30%;
   justify-content: center;
 }
-.Posts-header {
+#Post-header {
   display: flex;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.Posts-user-img {
+#Post-user-img {
   border-radius: 50%;
 }

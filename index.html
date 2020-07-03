@@ -6,6 +6,7 @@
     <title>LinkedIn HomePage</title>
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link href="reset.css" rel="stylesheet" type="text/css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="Navbar">
@@ -155,12 +156,14 @@
       </div>
     </div>
     <div class="Posts">
-      <div class="Posts-header">
-        <img class="Posts-user-img" />
-        <div class="Posts-user-info">
-          <p class="Posts-user-name"></p>
-          <p class="Posts-user-desc"></p>
+      <div id="Post-header">
+        <div id="Post-user-info">
+          <p id="Post-user-name"></p>
+          <p id="Post-user-desc"></p>
         </div>
+      </div>
+      <div id="Post-content">
+        <p id="Post-content-text"></p>
       </div>
     </div>
   </body>
