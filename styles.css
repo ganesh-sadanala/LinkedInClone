@@ -1,7 +1,3 @@
-img {
-  width: 40px;
-  height: 35px;
-}
 .Navbar {
   padding: 12px 30px;
   background: #283e4a;
@@ -16,9 +12,41 @@ img:hover {
   justify-content: space-around;
 }
 svg {
-  width: 40px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 svg:hover {
   fill: white;
+  cursor: pointer;
+}
+.Navbar-left {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.Navbar-left input[type="text"] {
+  position: relative;
+  width: 30%;
+  align-items: center;
+  background-color: #e1e9ee;
+  border-radius: 2px;
+  margin-left: 1%;
+  padding: 10px;
+  color: rgba(40, 62, 74, 0.75);
+  font-weight: 400;
+  font-size: 14px;
+}
+.Posts {
+  display: grid;
+  grid-template-columns: 30%;
+  justify-content: center;
+}
+.Posts-header {
+  display: flex;
+  justify-content: start;
+}
+.Posts-user-img {
+  border-radius: 50%;
 }
