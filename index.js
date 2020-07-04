@@ -89,6 +89,11 @@ window.onload = () => {
     post.className = "Post";
     let header = document.createElement("div");
     header.className = "Post-header";
+    let userImg = document.createElement("img");
+    userImg.className = "Post-user-img";
+    userImg.src = "./assets/linkedin.png";
+    userImg.alt = "avatar";
+    header.appendChild(userImg);
     let userInfo = document.createElement("div");
     userInfo.className = "Post-user-info";
     let userName = document.createElement("p");
@@ -108,6 +113,25 @@ window.onload = () => {
     userContent.innerHTML = userPost.content;
     postContent.appendChild(userContent);
     post.appendChild(postContent);
+    let reactions = document.createElement("div");
+    reactions.className = "Post-reaction";
+    let like = document.createElement("img");
+    let comment = document.createElement("img");
+    let share = document.createElement("img");
+    let send = document.createElement("img");
+    like.className = "Post-like";
+    comment.className = "Post-comment";
+    share.className = "Post-share";
+    send.className = "Post-send";
+    like.src = "./assets/like.svg";
+    comment.src = "./assets/comment.svg";
+    share.src = "./assets/share.svg";
+    send.src = "./assets/send.svg";
+    reactions.appendChild(like);
+    reactions.appendChild(comment);
+    reactions.appendChild(share);
+    reactions.appendChild(send);
+    post.appendChild(reactions);
     posts.appendChild(post);
   }
 };
