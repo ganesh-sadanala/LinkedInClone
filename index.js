@@ -54,7 +54,7 @@ const linkedInPosts = [
     comments: 10,
   },
   {
-    id: 4,
+    id: 7,
     user: "Tezi khan",
     description: "Software Engineer",
     content:
@@ -63,7 +63,7 @@ const linkedInPosts = [
     comments: 10,
   },
   {
-    id: 5,
+    id: 8,
     user: "Harshit Ahluwalla",
     description: "Data Scientist",
     content:
@@ -72,7 +72,88 @@ const linkedInPosts = [
     comments: 10,
   },
   {
-    id: 6,
+    id: 9,
+    user: "Arpit Shrotriya",
+    description: "App Developer Intern",
+    content:
+      "Hey Folks!\nHope everyone is doing well.\nAs #SIH2020 is coming closer than ever! And Gearing up to be an online event this year (that's a bummer tbh).\nIt would be really helpful for us if any of you great developers would like to help us in the field of Web Development for our project and become the mentor of Team Kaizen for #SIH2020.\nTeam Kaizen: Hemshree Madaan Shubham Gupta SUMIT KUMAR Simrann Arora Anirudh Jain\nHope A mentoring opportunity interest you.\n#SIH #Mentor #Developers #Project",
+    likes: 30,
+    comments: 10,
+  },
+  {
+    id: 10,
+    user: "Tezi khan",
+    description: "Software Engineer",
+    content:
+      "Which CSS framework is good for Angular Projects\napart from bootstrap",
+    likes: 50,
+    comments: 10,
+  },
+  {
+    id: 11,
+    user: "Harshit Ahluwalla",
+    description: "Data Scientist",
+    content:
+      "Recent #datascience #internship and #jobs\nComment 'Add me' and I will add you to our close Telegram channel\nData Science Internship - Corner Stone Solutions\nData Science Internship - UpTricks Services\nPlease find all above internship here: https://bit.ly/2YAhEQu\n---- Hope this helps!\n#dataanalyst #jobs #deeplearning #machinelearning #harshitahluwalia",
+    likes: 200,
+    comments: 10,
+  },
+  {
+    id: 12,
+    user: "Arpit Shrotriya",
+    description: "App Developer Intern",
+    content:
+      "Hey Folks!\nHope everyone is doing well.\nAs #SIH2020 is coming closer than ever! And Gearing up to be an online event this year (that's a bummer tbh).\nIt would be really helpful for us if any of you great developers would like to help us in the field of Web Development for our project and become the mentor of Team Kaizen for #SIH2020.\nTeam Kaizen: Hemshree Madaan Shubham Gupta SUMIT KUMAR Simrann Arora Anirudh Jain\nHope A mentoring opportunity interest you.\n#SIH #Mentor #Developers #Project",
+    likes: 30,
+    comments: 10,
+  },
+  {
+    id: 13,
+    user: "Tezi khan",
+    description: "Software Engineer",
+    content:
+      "Which CSS framework is good for Angular Projects\napart from bootstrap",
+    likes: 50,
+    comments: 10,
+  },
+  {
+    id: 14,
+    user: "Harshit Ahluwalla",
+    description: "Data Scientist",
+    content:
+      "Recent #datascience #internship and #jobs\nComment 'Add me' and I will add you to our close Telegram channel\nData Science Internship - Corner Stone Solutions\nData Science Internship - UpTricks Services\nPlease find all above internship here: https://bit.ly/2YAhEQu\n---- Hope this helps!\n#dataanalyst #jobs #deeplearning #machinelearning #harshitahluwalia",
+    likes: 200,
+    comments: 10,
+  },
+  {
+    id: 15,
+    user: "Arpit Shrotriya",
+    description: "App Developer Intern",
+    content:
+      "Hey Folks!\nHope everyone is doing well.\nAs #SIH2020 is coming closer than ever! And Gearing up to be an online event this year (that's a bummer tbh).\nIt would be really helpful for us if any of you great developers would like to help us in the field of Web Development for our project and become the mentor of Team Kaizen for #SIH2020.\nTeam Kaizen: Hemshree Madaan Shubham Gupta SUMIT KUMAR Simrann Arora Anirudh Jain\nHope A mentoring opportunity interest you.\n#SIH #Mentor #Developers #Project",
+    likes: 30,
+    comments: 10,
+  },
+  {
+    id: 16,
+    user: "Tezi khan",
+    description: "Software Engineer",
+    content:
+      "Which CSS framework is good for Angular Projects\napart from bootstrap",
+    likes: 50,
+    comments: 10,
+  },
+  {
+    id: 17,
+    user: "Harshit Ahluwalla",
+    description: "Data Scientist",
+    content:
+      "Recent #datascience #internship and #jobs\nComment 'Add me' and I will add you to our close Telegram channel\nData Science Internship - Corner Stone Solutions\nData Science Internship - UpTricks Services\nPlease find all above internship here: https://bit.ly/2YAhEQu\n---- Hope this helps!\n#dataanalyst #jobs #deeplearning #machinelearning #harshitahluwalia",
+    likes: 200,
+    comments: 10,
+  },
+  {
+    id: 18,
     user: "Arpit Shrotriya",
     description: "App Developer Intern",
     content:
@@ -81,7 +162,23 @@ const linkedInPosts = [
     comments: 10,
   },
 ];
+window.onresize = () => {
+  let screenWidth = window.innerWidth;
+  user = document.getElementById("linkedin-img");
+  if (screenWidth < 768) {
+    user.src = "./assets/user.png";
+  } else {
+    user.src = "./assets/linkedin.png";
+  }
+};
 window.onload = () => {
+  let screenWidth = window.innerWidth;
+  user = document.getElementById("linkedin-img");
+  if (screenWidth < 768) {
+    user.src = "./assets/user.png";
+  } else {
+    user.src = "./assets/linkedin.png";
+  }
   let posts = document.getElementById("Posts");
   for (var i = 0; i < linkedInPosts.length; i++) {
     let userPost = linkedInPosts[i];
