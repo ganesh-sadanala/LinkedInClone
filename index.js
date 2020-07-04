@@ -165,7 +165,7 @@ const linkedInPosts = [
 window.onresize = () => {
   let screenWidth = window.innerWidth;
   user = document.getElementById("linkedin-img");
-  if (screenWidth < 768) {
+  if (screenWidth <= 768) {
     user.src = "./assets/user.png";
   } else {
     user.src = "./assets/linkedin.png";
@@ -174,7 +174,7 @@ window.onresize = () => {
 window.onload = () => {
   let screenWidth = window.innerWidth;
   user = document.getElementById("linkedin-img");
-  if (screenWidth < 768) {
+  if (screenWidth <= 768) {
     user.src = "./assets/user.png";
   } else {
     user.src = "./assets/linkedin.png";
