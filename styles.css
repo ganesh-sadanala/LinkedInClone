@@ -9,9 +9,9 @@ html {
   background: #283e4a;
   border-top: none;
   display: flex;
-}
-img:hover {
-  cursor: pointer;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .Navbar-right {
   display: flex;
